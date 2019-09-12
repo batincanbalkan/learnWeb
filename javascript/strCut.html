@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            var str1 = "Apple, Banana, Kiwi";
+            var slicedString = str1.slice(7,13); //gives us banana
+            document.getElementById("demo").innerHTML= slicedString;
+            /////////////////////////////////////////////////////
+            var str2 = "Apple, Banana, Kiwi";
+            var substringString = str2.substring(7,13); //gives banana as well
+            document.getElementById("demo2").innerHTML= substringString;
+            /////////////////////////////////////////////////////
+            var str3 = "Apple, Banana, Kiwi";
+            var substrString = str3.substr(7,6);
+            document.getElementById("demo3").innerHTML= substrString;
+        </script>
+    </body>
+</html>
+<!--There are 3 ways to extract string parts which are: 
+1)slice(start,end): Can use negatives to count from the end 
+2)substring(start,end): Cant use negatives
+3)substr(start,length): same as slice but 2nd param tells you the length of the thing that you extract. If the first parameter is negative, 
+the position counts from the end of the string.
+-->
+<!--If you dont use 2 param with these they slice everything from that beginning point and gives u a new string-->

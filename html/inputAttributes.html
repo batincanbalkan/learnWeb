@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>  <!--Value is default-->
+    <body>
+        <form action="">
+            Name: <br>
+            <input type="text" name="name" value="John Doe" readonly> <!--Readonly cant be changed designed only to be read--> <br>
+            Name: <br>
+            <input type="text" name="name" value="Karl Marx" disabled>  <!--Hic bi sikim yapamazsin--> <br>
+            Name: <br>
+            <input type="text" name="name" value="Lebron JAMES" size="40"> <!--Kutunun sizeini degistiriyo(gorebildigin kisim)--> <br>
+            Name: <br>
+            <input type="text" name="name" value="MAX 9" maxlength="9"> <!----> <br>
+            <br> 
+            <br>
+        </form>
+            <form action="/action_page.php" autocomplete="on"> <!--Cookielerden aliyo tamamliyo -->
+                First name:<input type="text" name="fname"><br> <!--Bunu tamamladi-->
+                Last name: <input type="text" name="lname"><br> <!--Bunu tamamladi-->
+                E-mail: <input type="email" name="email" autocomplete="off"><br> <!--Bunu tamamlamaz-->
+                <input type="submit">
+            </form>
+            First name:<input type="text" name="fname" autofocus> <!--Autofocus kullaninca sayfa acilinca ona dikkatini cekiyo-->
+            <br><br>
+            <input type="image" src="download.jpg" alt="Submit" width="48" height="48"> <!--Image as a submit button-->
+            <br>
+            <form>
+                First Name:
+                <input type="text" name="firstName" placeholder="FirstName" autocomplete="off">
+                <input type="submit" name="submit" value="submit">
+            </form>
+    </body>
+</html>

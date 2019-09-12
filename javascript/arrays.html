@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <script>
+            var cars = ["Volvo", "Mercedes", "BMW"];  
+            // following will print volvo
+            document.getElementById("demo").innerHTML = cars[0]; 
+            // after the next statement the first item is chevrolet (this is how you change content)
+            cars[0] = "Chevrolet"; 
+            // following will print chevrolet
+            document.getElementById("demo2").innerHTML = cars[0]; 
+            // if you want to access the whole array(changed)
+            document.getElementById("demo3").innerHTML = "Whole changed array is " + cars;
+            //the following are properties of arrays
+            var lengthOfArray = cars.length; //.lenght gives 3 bc there are 3 elements
+            var sortedArray = cars.sort();   //.sort() will put in alphabetical order
+            document.getElementById("demo4").innerHTML = "The sorted array is: " + sortedArray +' ' + "its length is: " + lengthOfArray;
+            //the following will help you access the last element of the array
+            document.getElementById("demo5").innerHTML = "The last element of the sorted array is: " + (cars[(cars.length)-1]);
+        </script>
+    </body>
+</html>
+<!--Note: you can have vars of diff types in the same array-->

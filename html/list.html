@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!--Note that liste link img falan koyabilirsin-->
+<html>
+    <head>
+        <style>
+            ul{
+                background-color: red;
+                color: white;
+                list-style-type:circle; /* yuvarlaga cevirdik basindaki seyleri*/
+            }
+            ol {
+                background: yellow;
+                color: blue;
+                list-style-type:lower-roman /* lower romanla sayiyo, basinca baska secenekler de cikiyo bakabilirsin */
+            }
+            ul.ul01 {
+                color: black;
+                background-color: green;
+            }
+            #diff {
+                background-color: unset;
+                color: unset;
+                list-style-type:decimal
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Unorder List</h3> 
+        <ul> <!--Unordered list-->
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol> <!--Ordered list-->
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ol>
+        <h4>Description List</h4>
+        <dl> <!--Description list-->
+            <dt>Coffee</dt> <!--List Item-->
+            <dd>Black hot drink</dd> <!--List Items description-->
+            <dt>Milk</dt>
+            <dd>Cold white drink</dd>
+        </dl>
+        <h4>Now we will create a nested list</h4> <!--Nested List Creation and Usage-->
+        <ul class="ul01">
+            <li>Coffee</li>
+            <li>Tea
+                <ul class="ul01">
+                    <li>Black Tea</li>
+                    <li>Green Tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+        <h4>Lets start count from 51</h4>
+        <ol id="diff" start="51">
+            <li>fifty first item</li>
+            <li>fifty second item</li>
+        </ol>
+    </body>
+</html>

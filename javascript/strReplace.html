@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var fakeStr = "En buyuk gs";
+            var trueStr = fakeStr.replace("gs","FENERBAHCE"); //replace methodu yeni bir string olusturur eski stringi degistirmez
+            document.getElementById("demo").innerHTML = "Changed str: " + trueStr +' '+ "1st str: " + fakeStr;
+        </script>
+    </body>
+</html>
+<!--Sadece ilk occurencei degistirir.-->

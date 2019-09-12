@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!--Eger NAME attribute kullanmazsan datayi submit edemezsin o yuzden her zaman kullanmak zorundasin-->
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <form> <!--Used to collect input from user as a box-->
+            First Name <br>
+            <input type="text"> <br>
+            Second Name <br>
+            <input type="text">
+        </form>
+        <br>
+        <form> <!--Used to collect input from user as a clickable circle-->
+            <input type="radio" name="gender" value="male" checked>Male <br> <!--Checked means that it is initally selected-->
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="radio" name="gender" value="other">Other <br>
+        </form>
+        <br>
+        <form action="/actionpage.php" target="_blank"> <!--Form handler: actionpage.php. Burdaki bilgiyi oraya gonderiyo-->
+        <!--Target attributei ile submit edildikten sonra diger sayfa yanda acilcak diyo-->
+            First Name <br> <!--Values are default values-->
+            <input type="text" name="firstname" value="Batin"> <br>
+            Second Name <br>
+            <input type="text" name="lastname" value="Balkan"> <br>
+            <input type="submit" value="Submit"> <!--Button that is used to submit the form-->
+        </form>
+        <form action="/actionpage.php" method="GET"> <!--Method attribute: get or post methodunu secmeni sagliyor when you are submitting 
+        the form data. Default that is used is GET: GET kullanildiginda adress barinda submitted data gozukur. Bundan dolayi sensitive data
+        icin kullanilmaz. (((((((/action_page.php?firstname=Mickey&lastname=Mouse)))))) bunu gorursun-->
+            First Name <br> 
+            <input type="text" name="firstname" value="Batin"> <br>
+            Second Name <br>
+            <input type="text" name="lastname" value="Balkan"> <br>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/actionpage.php" method="POST" style="margin-left:50%">
+            <!--POST can bne used to send large amount of data however GET has character limitation-->
+            First Name <br> 
+            <input type="text" name="firstname" value="Batin"> <br>
+            Second Name <br>
+            <input type="text" name="lastname" value="Balkan"> <br>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/actionpage.php" method="POST">
+            <fieldset> <!--To group related data in a form -->
+                <legend>Personal info</legend> <!--Used as a caption for fieldset--> <br>
+                First Name <br>
+                <input type="text" name="firstName" value="FN"> <br>
+                Second name <br>
+                <input type="text" name="lastName" value="LN"> <br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>

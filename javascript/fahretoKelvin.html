@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>  
+    <body>
+        Fahrenheit Number: <input type="number" id="fahreNum"> <br> <br>
+        <button onclick="convertToCelcius()">Click to get Kelvin</button>
+        Celcius number: <input type="number" id="result" readonly>
+        <script>
+            function convertToCelcius(fahrenheit) {
+                var fahrenheit = document.getElementById('fahreNum').value;
+                var celcius = (5/9) * (fahrenheit-32);
+                return document.getElementById("result").value = celcius;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- The rest will be discussed later, there are shit tons like this 
+1)onchange: an html element has been changed //////cok secenekli formlarda kullanabilirsin
+2)onclick: the user clicks an html element
+3)onmouseover: the user moves the mouse over an html element
+4)onmouseout: the user moves the mouse away from an html element
+5)onkeydown: the user pushes a keyboard key ////////used for input boc falan
+6)onload: the browser has finished loading the page-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <p onclick="printHello()">Hello</p>
+        <p id="demo"></p>
+        <script>
+            function printHello(){
+                document.getElementById("demo").innerHTML = "hello";
+            }
+        </script>
+    </body>
+</html>

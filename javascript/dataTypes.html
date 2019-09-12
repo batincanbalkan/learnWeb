@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <script>
+            var x = 2;
+            var y = 3;
+            var z = "volvo"
+            var a = x + y + z; //gives 5volvo // 2+3+"volvo" // additionda stringi gordugu anda gerisini de string olarak aliyo
+            var b = z + x + y; //gives volvo23 // "volvo" + 2 + 3
+            document.getElementById("demo").innerHTML = a;
+            document.getElementById("demo2").innerHTML = b;
+            document.getElementById("demo2").innerHTML = typeof(b); //gives string bc b is a string
+            var string = "Sexy boy: 'Kamor'"; //this works fine
+            document.getElementById("demo3").innerHTML = string +' '+"type is:"+ ' '+ typeof(string);
+            var c = true;
+            var d = false;
+            var e = (c == d);
+            document.getElementById("demo4").innerHTML = e + ' ' + typeof(e); //return false + boolean
+            var f = (true && c);
+            document.getElementById("demo5").innerHTML = f + ' ' + typeof(f); //return true + boolean
+            var turki = ["fb", "gs", "bjk", 22];
+            document.getElementById("demo6").innerHTML = turki[0] + turki[3];
+            var person1 = { //this is how you create an obj
+                firstName : "Black",
+                lastName : "Dijk",
+                age : 21
+            }; 
+            document.getElementById("demo7").innerHTML ="Firstname:"+" "+ person1.firstName +" "+ "LastName:"+" "+ person1.lastName+" " 
+            +"Age:"+' '+ person1.age;
+        </script>
+    </body>
+</html>
+<!-- == valuelara === hem value hem typea bakiyor -->

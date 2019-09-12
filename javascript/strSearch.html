@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <script>
+            var str = "hellomynameis";
+            var str2 = "My life be like uaaaa"
+            var uzunluk = str.length; //assings 13 to uzunluk
+            var pos = str.indexOf('e'); //(Finds firt occurence.index 0dan basliyo yani 1 veriyor.
+            // You can search for a word instead of a letter as well.
+            var pos2 = str.lastIndexOf('e'); //Finds the last occurence and gives 10 
+            document.getElementById("demo").innerHTML = uzunluk + ' ' + pos + ' ' + pos2;
+            var pos3 = str2.search("be");
+            document.getElementById("demo2").innerHTML = pos3; 
+        </script>
+    </body>
+</html>
+<!--If indexOf or lastIndexOf cant find they return -1 
+    Bu methodlara 2.bir parametre ekleyebilirsin mesela indexOf('hello', 16) boyle dersen 16 dan baslarsin -->
+<!--Acknowledge that indexOf and search is almost the same, 1 difference is that search cant get a second argument-->

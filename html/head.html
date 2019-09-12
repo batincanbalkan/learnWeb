@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--Head tags usually are the following: title/style/meta/link/script/base-->
+        <title>Anan</title> <!--Browser tepede yaziyo-->
+        <style>  
+                body { 
+                    background-color: red
+                }
+                #withoutPort {
+                    width: 500px;
+                    height: 500px;
+                }
+            </style> 
+                   <link rel="stylesheet" href="styles.css"> <!--This overrides style-->
+                   <meta charset="UTF-8"> <!--Docta UTF-8 kullanicaz diyoruz-->
+                   <meta name="description" content="webTutorials"> <!--Description of a webpage-->
+                   <meta name="keywords" content="HTML,CSS,JS"> <!--Keywords for search engines-->
+                   <meta name="author" content="Batin Balkan">
+                   <meta http-equiv="refresh" content="30"> <!--30 secde 1 refresh at websitea-->
+                   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This should be in every web page you build. It gives
+                   browser instructions how to control the page's dimensions and scaling. Width=deviceWidth sets the width of the page to device's 
+                   width, initial scale sets initial zoom level when the page is opened for the first time-->
+        <script>
+            function newImage() {
+                document.getElementById("withoutPort").src="imgwithviewport.png";
+                document.getElementById("withoutPort").style.width="850px";
+                document.getElementById("withoutPort").style.height="850px";
+            }
+            function Write() {
+                document.getElementById("change").innerHTML="Wrote";
+            } 
+        </script>
+    </head> 
+    <body>
+        <p>I am high</p>
+        <h1>Viewport</h1>
+        <img id="withoutPort" src="img_viewport1.png">
+        <br>
+        <button type="button" onclick="newImage()">Click me to see what it looks like with viewport</button>
+        <p id="change"></p>
+        <button type="button" onclick="Write()">Write</button>
+    </body>
+</html>

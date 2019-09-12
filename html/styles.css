@@ -1,0 +1,12 @@
+body{ 
+    background-color: black
+}
+h1{
+    color:red
+}
+p{
+    color:white
+}
+/*
+It is a css file, when it is hrefed it will make background black, h1's red and paragraphs white
+*/

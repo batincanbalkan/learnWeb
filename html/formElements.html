@@ -1,0 +1,47 @@
+<!DOCTYPE html><!--Input is a form element we will go over the others as well-->
+<html>
+    <body>
+    <form action="selected.php">
+        <select name="cars" size="3" multiple> <!--Drop down menu--> <!--size 3 yazarak 3unu de visible yaptik seceneklerin-->
+            <!--Multiple yazaraqk birden fazla secenege izin verdim--> <!--Use cmd button to select multiple options-->
+            <option value="Ferrari">Ferrari</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes" selected>Mercedes</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <form action="selected.php"> <!--Kutu verdik doldurmalik, sizei burda belirledik ama css ile de belirlenebilir-->
+        <textarea rows="50" cols="50">Bunun altina yaz istedigin kadar 
+        </textarea>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>button element</h2>
+    <button type="button" onclick="alert('Hello World')">ALERT</button> <!--When using a button you always have to use type -->
+   
+    <!--DATALIST AND OUTPUT ARE ONLY USED IN HTML5-->
+    <form action="action.php">
+        <input list="cars" name="cars">
+        <datalist id="cars"> <!--Autocomplete yapmasi icin kullanilir --> <!--List ve id ayni isimli olmali-->
+            <option value="Lambo"></option>
+            <option value="Corvette"></option>
+            <option value="Ferro"></option>
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>The output element</h2> <!--Parse int stringi intigera cevirir--> <!--Script ile de yapilabilir-->
+    <form action="x.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 
+        0
+        <input type="range" name="ranged" id="a" value="50">
+        100
+        <input type="number" name="int" id="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit" value="Submit"></button>
+    </form>
+    </body>
+</html>

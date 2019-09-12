@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        img {
+            width: 100px;
+            height: 100%
+        } /* applied to all images, overrides the specified */
+        #other {
+            width: 200px;
+            height: 200%
+        }
+        </style>
+    </head>
+    <body>
+        <img src="lion-background-1366x768-laptop-255297.jpg"> <!--bu ustteki imgyi aldi butun imgler bunu alicak-->
+        <br>
+        <img id="other" src="lion-background-1366x768-laptop-255297.jpg"> <!--bu img ozel olsun dedim id verdim ve yukarda bu idli seye
+        yeni ozellikler tanimladim bu img digerinin 2 kati oldu--> <!-- always note that 1 sayfada 1 id bir kere kullanilabilir -->
+        <br>
+        <img src="mcgill.gif" alt="McGill stud">  <!--html allows you to use gifs-->
+        <br>
+        <img src="lion-background-1366x768-laptop-255297.jpg" alt="3rd mcgill image" style="width:400px; height:400px; float:right">
+        <!--you can override it like this as well and float right saga yapistiyor-->
+        <br>
+        <img src="lion-background-1366x768-laptop-255297.jpg" alt="centered" style="display:block; margin-left:auto; margin-right:auto">
+        <!--thats how you center an image-->
+    </body>
+</html>

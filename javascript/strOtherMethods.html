@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>    
+            var str1 = "I am normal";
+            var upperStr1 = str1.toUpperCase(); //hepsini upperCase yapar, toLowerCase: hepsini lower yapar
+            document.getElementById("demo").innerHTML = upperStr1;
+            //2 stringi birlestirme, can be done with + as well
+            var concatString = str1.concat(" ", upperStr1);
+            document.getElementById("demo2").innerHTML = concatString;
+            //trim white spaceleri eliminate eder 
+            var spacedStr = "               ben batin              ";
+            var noSpace = spacedStr.trim();
+            document.getElementById("demo3").innerHTML = noSpace;
+        </script>
+    </body>
+</html>
+<!-- Note that a string cant be changed, all the methods that we use create new strings  -->

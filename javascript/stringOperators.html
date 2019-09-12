@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            var str = "hello";
+            var str2 = "batin";
+            var str3 = "john";
+            document.getElementById("demo").innerHTML = str + ' ' + str2; //hello batin 
+            document.getElementById("demo2").innerHTML = str += (' ' + str3); //hello john
+            document.getElementById("demo3").innerHTML = str + ' ' + str2; //hello john batin bc we changed str
+        </script>
+    </body>
+</html>
+<!--Number + string gives string -->

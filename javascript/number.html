@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>    
+        <p id="demo4"></p>  
+        <p id="demo5"></p>  
+        <script>
+            var x = 7;
+            var y = 123e5;  //if you have really big numbers use e(10^) bc its more precise, 15 digitten sonra numaralar precise olmuyor
+            var z = 123e-5;
+            var a = "100";
+            var b = "20";
+            var c = a/b ; //this works and gives 5
+            document.getElementById("demo").innerHTML = c ;
+            var d = a + b; //however this gives 10020   
+            document.getElementById("demo2").innerHTML = d;
+            var e = "Apple";
+            var f = -100;
+            var g = e/f; 
+            document.getElementById("demo3").innerHTML = g; //returns NaN which is NotaNumber
+            var h = a/f;
+            document.getElementById("demo4").innerHTML = h; //returns -1 bc one is string and other is number, so it works
+            var i = isNaN(g); 
+            document.getElementById("demo5").innerHTML = i; //returns true bc it is NaN
+            var j = 2/0; //j nin valuesi Infinity oluyor, can be used with loops and shit
+        </script>
+    </body>
+</html>

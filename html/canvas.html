@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!--The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics-->
+        <html>  <!--Graphicler icin svg diye bir sey de var onda js lazim degil-->
+            <head>
+                <style>
+                    #myCanvas{
+                        border: 1px solid #d3d3d3
+                    }
+                </style>
+            </head>
+            <body>
+                <canvas id="myCanvas" width="200" height="100"></canvas> <!--Genisligi 200 uzunlugu 100 olan gorunmez bi kutu-->
+                <script> 
+                        var c = document.getElementById("myCanvas"); /* draw a line in the canvas */
+                        var ctx = c.getContext("2d");
+                        ctx.moveTo(0,0);
+                        ctx.lineTo(200,100);
+                        ctx.stroke();                                ///////////////////////////////
+                        var c = document.getElementById("myCanvas"); /* draw a circle */
+                        var ctx = c.getContext("2d");
+                        ctx.beginPath();
+                        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                        ctx.stroke();                               ///////////////////////////////
+                        var c = document.getElementById("myCanvas"); /* write something full boya */
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText("Hello World", 10, 50);       ///////////////////////////////      
+                        var c = document.getElementById("myCanvas"); /* write something cizikli boya */
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.strokeText("Hello World", 20, 20);     ///////////////////////////////    
+                </script>
+            </body>
+        </html>
+        
+        

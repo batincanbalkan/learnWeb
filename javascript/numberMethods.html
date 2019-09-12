@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <script>
+            ////////////////////////turn to string////////////////////////
+            var a = 120; 
+            var b = a.toString();
+            var c = b + 120; //gives 120120 not 240
+            document.getElementById("demo").innerHTML = c;
+            document.getElementById("demo2").innerHTML = a + 120; //gives 240
+            //////////////////////returns the number with specified amount of decimals, rounds if necessary/////////////
+            var d = 9.656; 
+            var e = d.toFixed(0); //returns 10  
+            var f = d.toFixed(2); //returns 9.66
+            var g = d.toFixed(3); //returns 9.656
+            var h = d.toFixed(6); //returns 9.656000
+            document.getElementById("demo3").innerHTML = e + '-' + f + '-' + g + '-'+ h;
+            ///////////////////////returns the amount of specified digits, rounds if necessary/////////////////////////
+            var i = d.toPrecision();  //returns 9.656
+            var j = d.toPrecision(2); //returns 9.7
+            var k = d.toPrecision(4); //returns 9.656
+            var l = d.toPrecision(6); //returns 9.65600
+            document.getElementById("demo4").innerHTML = i + '-' + j + '-' + k + '-' + l;
+            //////////////////////get the value of something///////////////////////////////////
+            var num1 = 123;
+            var num2 = num1.valueOf();
+            var num3 = (123+17).valueOf();
+            var newNum = num1+num3;
+            document.getElementById("demo5").innerHTML = newNum.valueOf();
+        </script>
+    </body>
+</html>

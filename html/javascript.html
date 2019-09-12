@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!--JS is mostly used for image manipulation, form validation, and dynamic changes of content-->
+<html>
+<head>
+        <script>
+                function changeHTMLContent(){
+                    document.getElementById("demo").innerHTML="You clicked"; //This is a demonstration turns to you clicked
+                    document.getElementById("demo2").innerHTML="I am changed as well"
+                }
+                function changeHTMLStyle(){
+                    document.getElementById("demo2").style.fontSize="30px";
+                    document.getElementById("demo2").style.fontFamily="fantasy";
+                    document.getElementById("demo2").style.backgroundColor="red";
+                    document.getElementById("demo").style.backgroundColor="blue";
+                }
+                function changeHTMLAttribute(){
+                    document.getElementById("demo3").src="download.jpg";
+                    document.getElementById("demo3").style.width="1000px";
+                    document.getElementById("demo3").style.height="1000px";
+                }
+            </script>
+            <noscript>Sorry, your browser does not support JS</noscript> <!--Js'si olmayanlar icin-->
+</head>
+<body>
+    <h1>My First JS</h1>
+    <p>Javascript can change the content of an HTML element</p> 
+    <button type="button" onclick="changeHTMLContent()">Click Me to change content</button>
+    <button type="button" onclick="changeHTMLStyle()">Click Me to change style</button>
+    <button type="button" onclick="changeHTMLAttribute()">Click me to change attribute</button>
+    <p id="demo">This is a demonstration</p> <!--basta demo yaziyo buttona clickleyince biz bunu degistiricez-->
+    <p id="demo2">This is another demonstration</p>
+    <img id="demo3" src="mh-lebron-zendaya-1562696555.jpg" width="100" height="100">
+</body>
+</html>

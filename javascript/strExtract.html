@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <button onclick="printNew()">Click me to see</button>
+        <script>
+        var newStr = "I am a mf string";
+        var letter = newStr.charAt(8);
+        document.getElementById("demo").innerHTML = letter; //returns f 
+        var newLetter = newStr[2]; //makes strings look like arrays, charAt is more useful
+        document.getElementById("demo2").innerHTML = newLetter; //returns a 
+        //////////////////////////////////////////////////////////////////////////////////
+        var letters = "a, b, c, d, e, f"; //convert string to array 
+        var array = letters.split(","); //virgul gorunce ayir demek
+        function printNew() {
+            document.getElementById("demo3").innerHTML = array[0];
+        }
+        </script>
+    </body>
+</html>

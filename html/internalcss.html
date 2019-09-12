@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!--internal css is used to style this page-->
+<html>
+    <head>
+        <style> 
+        body {background-color: black}
+        h1 {color: red;
+            font-family:Verdana, Geneva, Tahoma, sans-serif; 
+            font-size:300%;
+            border:2px solid yellow;
+            padding:30px
+         } 
+        p {color: white;
+           font-family:fantasy;
+           margin:55px} 
+        #p01 {
+            color: greenyellow;
+            font-size: 30px;
+            margin: 0px;
+        }
+        p.error {
+            color: orange
+        }
+        </style>
+        <!--a default paragraph will be white and h1 will be red-->
+        <!--a default h1 will have that particular fontfamily and 3x font size and 2 px border-->
+        <!--padding(space) btwn the text and border-->
+        <!--margin: spacing btwn outer -->
+    </head>
+    <body>
+        <h1>This is a red heading</h1>
+        <p>This is a white paragraph</p>
+        <p style="color:yellow">We can override what we described up in style tag</p><!-- now it is yellow-->
+        <p id="p01">I am a special paragraph</p>     <!--p01i style icinde define ettik, margini otomatik olarak 55di ben onu 0 yaptim-->
+        <!--id is always unique, bi sayfada o idye ait bitane element olabilir, access etmek icin # kullanmalisin-->
+        <p class="error">I am different, ex:"error"</p> <!--classlarla etkilesime gecmek icin . kullanmalisin check upper style stuff9-->
+        </html>

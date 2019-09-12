@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            ////////////////number method can be used to turn vars into nums////////////////////
+            var a = Number("10   "); //returns 10
+            var b = Number("10 22"); //returns NaN
+            var c = Number("John");  //returns NaN
+            var d = Number(true);    //returns 1
+            var e = Number(false);   //returns 0
+            document.getElementById("demo").innerHTML = a + '--' + b + '--' + c + '--' + d + '--' + e;
+            var f = ("10").valueOf();
+            document.getElementById("demo").innerHTML = f;
+            //////parsing(break up) a string and getting an int. It only gets the 1st one. If first thing is not a number, returns NaN/////
+            var g = parseInt("100 200 300"); //returns 100
+            var h = parseInt("Mister 10"); //returns NaN
+            var i = parseInt("50 Mister"); //returns 50
+            var j = parseInt("10.20"); //returns 10
+            document.getElementById("demo2").innerHTML = g + '-' + h + '-' + i + '-' + j;
+            //parseFloat: farki noktali sayilarin .li tarafini da gosterir
+            var k = parseFloat(10.22);
+            document.getElementById("demo3").innerHTML = k; //returns 10.22
+        </script>
+    </body>
+</html>

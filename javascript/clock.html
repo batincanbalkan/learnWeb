@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function time() {
+                document.getElementById("demo").innerHTML = Date();
+            }       
+        </script>
+        <button onclick="time()">Click to display time</button>
+        <p id="demo"></p>
+        <!--Lets build another clock-->
+        <button onclick="this.innerHTML = Date()"">I am the other clock</button>
+    </body>
+</html>

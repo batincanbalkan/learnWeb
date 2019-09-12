@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <script>
+            var car = {
+                type : "Fiat",
+                model: "Trio",
+                color: "white"
+            };
+        document.getElementById("demo").innerHTML = car.type;
+            var person = {
+                firstName : "John",
+                lastName : "Doe",
+                age : 31,
+                fullName : function() {
+                    return this.firstName +' '+ this.lastName;
+                }
+            };
+        document.getElementById("demo2").innerHTML = person.fullName();
+        </script>
+    </body>
+</html>

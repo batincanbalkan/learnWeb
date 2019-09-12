@@ -1,0 +1,19 @@
+<!DOCTYPE html> <!--HTML iframes are used to display a webpage within another-->
+<html>
+    <head>
+        <style>
+            iframe {
+                width: 80%;
+                height: 80%;
+                border: none; /*by default iframe has a border by this we remove that border */
+            }
+        </style>
+    </head>
+    <body>
+        <iframe src="https://www.cars.com/shopping/"></iframe> <!--Kucuk bi window gibi bisi aciliyo-->
+        <!-- Iframe can also be used as a target for a link, the following shows that usage -->
+        <iframe src="https://www.cars.com/shopping/" name="iframe_a"></iframe>
+        <p><a href="https://docs.oracle.com/cd/E92917_01/homepage.htm" target="iframe_a">oracle</a></p>  <!--name and target must match-->
+        <!--oracle linkine tiklayinca kutuda aciliyo yani iframede-->
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #table,td,th{
+                border: 1px solid black;
+                border-collapse:collapse;
+                padding: 10px;
+                width: 70%;
+                text-align: left;
+                table-layout: fixed
+            }
+            .num1 {
+                width:20%; 
+                max-width:20%; 
+                table-layout: fixed
+            }
+            #table2, th, td {
+                border: 1px solid black;
+                border-collapse:collapse;
+                padding: 10px;
+                width: 70%;
+                text-align: left;
+                table-layout: fixed
+            }
+        </style>
+    </head>
+    <body> <!--Some characters might be mixed for example <,> can be mixed with tags-->
+        <!--To use less than you have to write: &lt or &#60-->
+        <p>5 &lt; 6 &#60; 7</p>
+        <p>10&nbsp;km</p> <!--not breakable yani asagi falan gitmez-->
+        <h2 style="color:red">This is a list of all character entities: 
+        </h2>
+        <table id="table">
+                <tr>
+                  <th class="num1">Result</th>
+                  <th>Description</th>
+                  <th>Entity Name</th>
+                  <th>Entity Number</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="num1">non-breaking space</td>
+                  <td>&amp;nbsp;</td>
+                  <td>&amp;#160;</td>
+                </tr>
+                <tr>
+                  <td class="num1">&lt;</td>
+                  <td>less than</td>
+                  <td>&amp;lt;</td>
+                  <td>&amp;#60;</td>
+                </tr>
+                <tr>
+                  <td class="num1">&gt;</td>
+                  <td>greater than</td>
+                  <td>&amp;gt;</td>
+                  <td>&amp;#62;</td>
+                </tr>
+                <tr>
+                  <td class="num1">&amp;</td>
+                  <td>ampersand</td>
+                  <td>&amp;amp;</td>
+                  <td>&amp;#38;</td>
+                </tr>
+                <tr>
+                  <td class="num1">"</td>
+                  <td>double quotation mark </td>
+                  <td>&amp;quot;</td>
+                  <td>&amp;#34;</td>
+                </tr>
+                <tr>
+                  <td class="num1">'</td>
+                  <td>single quotation mark (apostrophe) </td>
+                  <td>&amp;apos;</td>
+                  <td>&amp;#39;</td>
+                </tr>
+                <tr>
+                  <td class="num1">¢</td>
+                  <td>cent</td>
+                  <td>&amp;cent;</td>
+                  <td>&amp;#162;</td>
+                </tr>
+                <tr>
+                  <td class="num1">£</td>
+                  <td>pound</td>
+                  <td>&amp;pound;</td>
+                  <td>&amp;#163;</td>
+                </tr>
+                <tr>
+                  <td class="num1">¥</td>
+                  <td>yen</td>
+                  <td>&amp;yen;</td>
+                  <td>&amp;#165;</td>
+                </tr>
+                <tr>
+                  <td class="num1">€</td>
+                  <td>euro</td>
+                  <td>&amp;euro;</td>
+                  <td>&amp;#8364;</td>
+                </tr>
+                <tr>
+                  <td class="num1">©</td>
+                  <td>copyright</td>
+                  <td>&amp;copy;</td>
+                  <td>&amp;#169;</td>
+                </tr>
+                <tr>
+                  <td class="num1">®</td>
+                  <td>registered trademark</td>
+                  <td>&amp;reg;</td>
+                  <td>&amp;#174;</td>
+                </tr>
+                </tbody></table>
+    <h2>Combining dialical marks</h2>
+    </body>
+    <table id="table2">
+            <tbody><tr>
+            <th>Mark</th>
+            <th>Character</th>
+            <th>Construct</th>
+            <th>Result</th>
+            </tr>
+            <tr>
+                  <td>&nbsp;̀</td>
+                  <td>a</td>
+                  <td>a&amp;#768;</td>
+                  <td>à</td>
+            </tr>
+            <tr>
+                  <td>&nbsp;́</td>
+                  <td>a</td>
+                  <td>a&amp;#769;</td>
+                  <td>á</td>
+            </tr>
+            <tr>
+                  <td>̂</td>
+                  <td>a</td>
+                  <td>a&amp;#770;</td>
+                  <td>â</td>
+            </tr>
+            <tr>
+                  <td>&nbsp;̃</td>
+                  <td>a</td>
+                  <td>a&amp;#771;</td>
+                  <td>ã</td>
+            </tr>
+            <tr>
+                  <td>&nbsp;̀</td>
+                  <td>O</td>
+                  <td>O&amp;#768;</td>
+                  <td>Ò</td>
+            </tr>
+            <tr>
+                  <td>&nbsp;́</td>
+                  <td>O</td>
+                  <td>O&amp;#769;</td>
+                  <td>Ó</td>
+            </tr>
+            <tr>
+                  <td>̂</td>
+                  <td>O</td>
+                  <td>O&amp;#770;</td>
+                  <td>Ô</td>
+            </tr>
+            <tr>
+                  <td>&nbsp;̃</td>
+                  <td>O</td>
+                  <td>O&amp;#771;</td>
+                  <td>Õ</td>
+            </tr>
+            </tbody></table>
+</html>
+<!--&entity_name or &#entity_number-->
+
+
